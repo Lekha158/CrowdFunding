@@ -85,12 +85,7 @@ margin-bottom: 26px;
   text-decoration: none;
 }
 
-.container {
-  position: relative;
-  z-index: 1;
-  max-width: 300px;
-  margin: 0 auto;
-}
+
 
 body {
   background-color: #328f8a;

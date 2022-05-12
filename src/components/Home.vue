@@ -1,25 +1,25 @@
 <template>
     <div class="container">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
+    <!-- Indicators
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+    </ol> -->
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="@/assets/piggy.jpg" class="image">  
+        <img src="@/assets/piggy.jpg" style="width:100%;">  
       </div>
 
       <div class="item">
-        <img src="@/assets/idea.jpg" class="image">
+        <img src="@/assets/idea.jpg" style="width:100%;" >
       </div>
     
       <div class="item">
-        <img src="@/assets/people.jpg" class="image" >
+        <img src="@/assets/people.jpg" style="width:100%;">
       </div>
     </div>
 
@@ -43,6 +43,9 @@
 
 <style>
 .container {
- margin-top: 60px;
+ margin-top: 50px !important;
+ max-width: 500px;
+ object-fit: cover;
+ margin-left: auto;
 }
 </style>
