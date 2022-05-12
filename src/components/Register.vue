@@ -3,31 +3,22 @@
       <div class="form">
         <div class="login">
           <div class="login-header">
-            <h3>LOGIN</h3>
-            <p>Please enter your credentials to login.</p>
+            <h3>REGISTER</h3>
+            <p>Please register if you no accounts.</p>
           </div>
         </div>
         <form class="login-form">
           <input type="text" placeholder="username"/>
+          <input type="email" placeholder="email"/>
+          <input type="number" placeholder="contact"/>
           <input type="password" placeholder="password"/>
-          <button>Login</button>
-          <p class="message">Not registered? <a href="#" @click="navigateToRegister">
-          Create an account</a></p>
+          <button>Register</button>
         </form>
       </div>
     </div>
 </template>
 
-<script>
-export default {
-  name: 'Register',
-    methods: {
-      navigateToRegister() {
-            this.$router.push('/register');
-      }
-    }
-}
-</script>
+
 
 <style>
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);

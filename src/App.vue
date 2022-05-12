@@ -1,12 +1,14 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import Header from './components/Header.vue';
 </script>
 
 <template>
+  <Header />
   <RouterView />
 </template>
 
-<style>
+<!-- <style>
 @import '@/assets/base.css';
 
 #app {
@@ -102,4 +104,4 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
-</style>
+</style> -->
