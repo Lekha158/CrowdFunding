@@ -1,44 +1,45 @@
 <template>
-    <div class="login-page">
-      <div class="form">
-        <div class="login">
-          <div class="login-header">
-            <h3>REGISTER</h3>
-            <p>Please register if you no accounts.</p>
-          </div>
+  <div class="register-page">
+    <div class="form">
+      <div class="login">
+        <div class="login-header">
+          <h3>REGISTER</h3>
+          <p>Please register if you are a new member</p>
         </div>
-        <form class="login-form">
-          <input type="text" placeholder="username"/>
-          <input type="email" placeholder="email"/>
-          <input type="number" placeholder="contact"/>
-          <input type="password" placeholder="password"/>
-          <button>Register</button>
-        </form>
       </div>
+      <form class="login-form">
+        <input type="text" placeholder="username" />
+        <input type="email" placeholder="email" />
+        <input type="number" placeholder="contact" />
+        <input type="password" placeholder="password" />
+        <button>Register</button>
+      </form>
     </div>
+  </div>
 </template>
 
 
 
 <style>
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
-header .header{
+
+header .header {
   background-color: #fff;
   height: 45px;
 }
-header a img{
-  width: 134px;
-margin-top: 4px;
-}
-.login-page {
+
+
+.register-page {
   width: 360px;
-  padding: 8% 0 0;
+  padding: 4% 0 0;
   margin: auto;
 }
-.login-page .form .login{
+
+.register-page .form .login {
   margin-top: -31px;
-margin-bottom: 26px;
+  margin-bottom: 26px;
 }
+
 .form {
   position: relative;
   z-index: 1;
@@ -49,6 +50,7 @@ margin-bottom: 26px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
+
 .form input {
   font-family: "Roboto", sans-serif;
   outline: 0;
@@ -60,12 +62,13 @@ margin-bottom: 26px;
   box-sizing: border-box;
   font-size: 14px;
 }
+
 .form button {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
   background-color: #328f8a;
-  background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+  background-image: linear-gradient(45deg, #328f8a, #08ac4b);
   width: 100%;
   border: 0;
   padding: 15px;
@@ -75,21 +78,24 @@ margin-bottom: 26px;
   transition: all 0.3 ease;
   cursor: pointer;
 }
+
 .form .message {
   margin: 15px 0 0;
   color: #b3b3b3;
   font-size: 12px;
 }
+
 .form .message a {
   color: #4CAF50;
   text-decoration: none;
 }
 
-
-
 body {
   background-color: #328f8a;
-  background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+   background-image: url('@/assets/kid.png');
+   height: 100vh;
+   background-position: center;
+   background-repeat: no-repeat;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
