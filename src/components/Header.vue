@@ -2,11 +2,10 @@
   <header>
     <div class="header-wrapper">
       <div class="logo">
-        <img src="@/assets/littlehelp.png" class="logoImg" />
+        <img @click="navigateToHome" src="@/assets/littlehelp.png" class="logoImg" />
       </div>
       <nav>
         <ul class="nav-list">
-          <li class="nav-item" @click="navigateToHome">Home</li>
           <li class="nav-item" @click="navigateToFund">RaiseFund</li>
         </ul>
       </nav>
@@ -51,7 +50,7 @@ header .header-wrapper {
   display: flex;
   align-items: center;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 header .header-wrapper nav {

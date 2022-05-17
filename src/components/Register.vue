@@ -12,12 +12,24 @@
         <input type="email" placeholder="email" />
         <input type="number" placeholder="contact" />
         <input type="password" placeholder="password" />
-        <button>Register</button>
+        <button @click="navigateToFund">Register</button>
       </form>
     </div>
   </div>
 </template>
-
+<script>
+export default {
+  name: 'Register',
+    methods: {
+      navigateToRegister() {
+            this.$router.push('/register');
+      },
+      navigateToFund() {
+      this.$router.push('/fund');
+      }
+    }
+}
+</script>
 
 
 <style>

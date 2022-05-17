@@ -10,7 +10,7 @@
         <form class="login-form">
           <input type="text" placeholder="username"/>
           <input type="password" placeholder="password"/>
-          <button>Login</button>
+          <button @click="navigateToFund">Login</button>
           <p class="message">Not registered? <a href="#" @click="navigateToRegister">
           Create an account</a></p>
         </form>
@@ -20,10 +20,13 @@
 
 <script>
 export default {
-  name: 'Register',
+  name: 'Login',
     methods: {
       navigateToRegister() {
             this.$router.push('/register');
+      },
+      navigateToFund() {
+      this.$router.push('/fund');
       }
     }
 }
