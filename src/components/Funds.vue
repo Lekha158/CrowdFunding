@@ -17,6 +17,7 @@
                 <input type="number" placeholder="contact" />
                 <input type="text" placeholder="upi id" />
                 <input type="text" placeholder="Needy Person Name" />
+                <input type="number" placeholder="Age" />
                 <input type="number" placeholder="contact" />
                 <textarea type="text" placeholder="Details" class="details"> </textarea>
                 <button @click="navigateToFundDetails">Submit</button>
